@@ -15,11 +15,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 
 body{
-    font-family: 'Red Hat Display', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -38,8 +38,9 @@ img {
     display: flex;
     flex-direction: column;
     background-color: white;
-    max-width: min(90%, 18.75rem);
+    max-width: min(90%, 20.625rem);
     border-radius: 10px;
+    box-shadow: 3px 3px 50px 3px var(--desaturated-blue);
 }
 
 .img-card img{
@@ -48,13 +49,15 @@ img {
 }
 
 .informations-card{
-    padding: 2rem;
+    width: 100%;
+    padding: 2.7rem;
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
-    gap: .8rem;
     align-items: center;
     text-align: center;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 .tilte-informations{
@@ -69,24 +72,22 @@ img {
 }
 
 .flex-container{
-    background-color: var(--very-pale-blue);
-    width: 100%;
+    background-color: var(--very-pale-blue);width: 100%;
     display: flex;
     align-items: center;
-    padding: .5rem 1rem;
-    box-sizing: content-box;
+    padding: 1rem;
     justify-content: space-between;
     border-radius: 10px;
 }
 
 .plan-type{
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 900;
     color: var(--dark-blue);
 }
 
 .plan-price{
-    font-size: .9rem;
+    font-size: .8rem;
     font-style: 500;
     color:var(--desaturated-blue)
 }
@@ -94,4 +95,29 @@ img {
 .plan-change{
     font-size: .9rem;
     margin-left: 1.5rem;
+}
+
+.btn{
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.btn-submit{
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+    font-weight: 700;
+ 
+}
+
+
+.btn-cancel{
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 900;
+    color: var(--desaturated-blue);
 }
